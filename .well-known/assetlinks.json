@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.viralpilot.app",
+      "sha256_cert_fingerprints": [
+        "2E:F4:FE:56:CC:A6:42:7B:A5:42:40:4F:80:73:01:73:C4:24:A0:6D:D6:BA:8C:8F:42:EA:92:1D:90:53:9C:D1",
+        "5E:D7:D8:E2:90:8D:6F:B3:35:9A:0C:C3:2B:64:6D:12:E3:CF:3F:09:2D:83:70:91:9B:00:7C:9A:EE:2A:ED:CF"
+      ]
+    }
+  }
+]
