@@ -5,56 +5,92 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ViralPilot — YouTube analytics and SEO assistant</title>
 <meta name="description" content="ViralPilot is a YouTube analytics and AI-assisted SEO app for creators.">
-<style>
-  :root { --bg:#ffffff; --fg:#1a1a1a; --muted:#555; --accent:#d93025; --line:#e5e5e5; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#121212; --fg:#eeeeee; --muted:#aaa; --accent:#ff6b5e; --line:#2a2a2a; } }
-  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:40px 16px; }
-  h1 { font-size:2rem; margin:0 0 4px; }
-  h2 { font-size:1.2rem; margin-top:32px; }
-  .tag { color:var(--muted); margin:0 0 24px; }
-  a { color:var(--accent); }
-  li { margin:6px 0; }
-  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
-</style>
+<meta name="theme-color" content="#07070c">
+<meta property="og:title" content="ViralPilot">
+<meta property="og:description" content="YouTube analytics and AI-assisted SEO for creators.">
+<meta property="og:image" content="https://mubarakansari715.github.io/assets/icon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<main>
-  <h1>ViralPilot</h1>
-  <p class="tag">YouTube analytics and AI-assisted SEO for creators.</p>
+<header class="site-header">
+  <a class="brand" href="./"><img src="assets/icon-192.png" alt="">ViralPilot</a>
+  <nav>
+    <a href="./" aria-current="page">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+</header>
 
-  <p>ViralPilot helps YouTube creators understand how their channel is performing and how to
-  improve their videos' titles, descriptions, tags and thumbnails. Paste any public video or
-  channel link to get scores and suggestions, with no account needed. You can also sign in
-  with Google to see private analytics for <strong>your own</strong> channel.</p>
+<main>
+  <section class="hero">
+    <img src="assets/icon-512.png" alt="ViralPilot app icon">
+    <h1><span class="gradient-text">ViralPilot</span></h1>
+    <p class="tagline">YouTube analytics and AI-assisted SEO for creators.</p>
+    <p>ViralPilot helps YouTube creators understand how their channel is performing and how to
+    improve their videos' titles, descriptions, tags and thumbnails. Paste any public video or
+    channel link to get scores and suggestions, with no account needed. You can also sign in
+    with Google to see private analytics for <strong>your own</strong> channel.</p>
+  </section>
 
   <h2>What ViralPilot does</h2>
-  <ul>
-    <li><strong>Channel dashboard</strong>: views, uploads, posting cadence, best days to post,
-      top keywords and best and worst performing videos, from public YouTube data.</li>
-    <li><strong>Video SEO analysis</strong>: suggestions for titles, hooks, descriptions, tags,
-      hashtags and thumbnails, plus a viral-potential checklist.</li>
-    <li><strong>AI copilot</strong>: ask questions about a channel's public data.</li>
-    <li><strong>Channel comparison</strong>: compare two channels side by side.</li>
-    <li><strong>Your own analytics (optional sign-in)</strong>: watch time, audience retention,
-      traffic sources and demographics for the channel you sign in with, using the YouTube
-      Analytics API (read-only).</li>
-    <li><strong>Channel management (owner only)</strong>: the channel owner can update their own
-      videos' titles, descriptions, tags and playlists with ViralPilot's tools.</li>
-  </ul>
+  <div class="features">
+    <div class="card">
+      <div class="icon" aria-hidden="true">📊</div>
+      <h3>Channel dashboard</h3>
+      <p>Views, uploads, posting cadence, best days to post, top keywords and best and worst
+      performing videos, from public YouTube data.</p>
+    </div>
+    <div class="card">
+      <div class="icon" aria-hidden="true">🔍</div>
+      <h3>Video SEO analysis</h3>
+      <p>Suggestions for titles, hooks, descriptions, tags, hashtags and thumbnails, plus a
+      viral-potential checklist.</p>
+    </div>
+    <div class="card">
+      <div class="icon" aria-hidden="true">💬</div>
+      <h3>AI copilot</h3>
+      <p>Ask questions about a channel's public data and get answers grounded in it.</p>
+    </div>
+    <div class="card">
+      <div class="icon" aria-hidden="true">⚖️</div>
+      <h3>Channel comparison</h3>
+      <p>Compare two channels side by side.</p>
+    </div>
+    <div class="card">
+      <div class="icon" aria-hidden="true">📈</div>
+      <h3>Your own analytics</h3>
+      <p>With optional sign-in: watch time, audience retention, traffic sources and demographics
+      for the channel you sign in with, using the YouTube Analytics API (read-only).</p>
+    </div>
+    <div class="card">
+      <div class="icon" aria-hidden="true">✏️</div>
+      <h3>Channel management</h3>
+      <p>Owner only: the channel owner can update their own videos' titles, descriptions, tags
+      and playlists with ViralPilot's tools.</p>
+    </div>
+  </div>
 
   <h2>Why ViralPilot asks for Google access</h2>
-  <p>Signing in is optional. If you sign in, ViralPilot asks for access to your YouTube account
-  only to show your own channel's analytics and, if you choose, to update your own videos'
-  details. ViralPilot does not sell your data, does not share it with third parties for
-  advertising, and never changes anything on your channel unless you ask it to. See the
-  <a href="privacy.html">Privacy Policy</a> for details.</p>
-
-  <footer>
-    <a href="privacy.html">Privacy Policy</a> ·
-    ViralPilot uses YouTube API Services. See the
-    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
-  </footer>
+  <div class="card callout">
+    <p>Signing in is optional. If you sign in, ViralPilot asks for access to your YouTube account
+    only to show your own channel's analytics and, if you choose, to update your own videos'
+    details. ViralPilot does not sell your data, does not share it with third parties for
+    advertising, and never changes anything on your channel unless you ask it to. See the
+    <a href="privacy.html">Privacy Policy</a> for details.</p>
+  </div>
 </main>
+
+<footer class="site-footer">
+  <span>© 2026 ViralPilot</span>
+  <span>
+    <a href="privacy.html">Privacy Policy</a> ·
+    Uses YouTube API Services: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+  </span>
+</footer>
 </body>
 </html>
