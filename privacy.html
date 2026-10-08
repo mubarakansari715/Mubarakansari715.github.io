@@ -32,7 +32,7 @@
     <p class="lead">This policy explains what information ViralPilot ("the app", "we") accesses, how it is used,
   stored and shared, and the choices you have. ViralPilot is a YouTube analytics and SEO
   assistant for creators.</p>
-    <p class="updated">Last updated: 7 October 2026</p>
+    <p class="updated">Last updated: 8 October 2026</p>
   </section>
 
   <h2>At a glance</h2>
@@ -44,8 +44,8 @@
     </div>
     <div class="card">
       <div class="icon" aria-hidden="true">📱</div>
-      <h3>Stored on your device</h3>
-      <p>ViralPilot has no server of its own. Your data and sign-in stay on your device.</p>
+      <h3>Minimal account data</h3>
+      <p>Your YouTube data stays on your device. If you sign in, we keep only a basic account record.</p>
     </div>
     <div class="card">
       <div class="icon" aria-hidden="true">🔒</div>
@@ -70,7 +70,9 @@
     </section>
     <section class="card policy-section" id="s2">
       <h3><span class="num">2</span>Google user data we access when you sign in</h3>
-    <p>Signing in with Google is optional. If you sign in, the app requests these permissions:</p>
+    <p>Signing in is optional. You can sign in with Google, or with an email address and password.
+    Only Google sign-in gives the app access to Google user data. When you sign in with Google, the
+    app requests these permissions:</p>
     <div class="table-wrap"><table>
       <tr><th>Permission (scope)</th><th>What we access</th><th>Why</th></tr>
       <tr><td>Basic profile and email (<code>openid</code>, <code>email</code>, <code>profile</code>)</td>
@@ -82,21 +84,24 @@
       <tr><td>View YouTube Analytics reports (<code>yt-analytics.readonly</code>)</td>
           <td>Watch time, audience retention, traffic sources and audience demographics for your channel</td>
           <td>To show your channel's performance and explain why videos did or did not perform well</td></tr>
-      <tr><td>Manage your YouTube account (<code>youtube.force-ssl</code>), used only by the channel-management tools</td>
-          <td>Your videos' titles, descriptions, tags and playlists</td>
-          <td>To update your own videos' details, only when you ask it to</td></tr>
     </table></div>
-    <p>We only ever access the channel you signed in with. We never upload, delete or publish
-    videos, post comments, or change anything on your channel without your action.</p>
+    <p>We only ever access the channel you signed in with. All access is read-only: ViralPilot
+    cannot upload, delete or publish videos, post comments, or change anything on your channel.</p>
     </section>
     <section class="card policy-section" id="s3">
       <h3><span class="num">3</span>How we store your data</h3>
     <ul>
-      <li><strong>On your device only.</strong> ViralPilot has no server or account database of its own.
-        Sign-in tokens are kept on your device and are used only to call Google's APIs for you.</li>
+      <li><strong>Account record.</strong> When you sign in (with Google or email and password), an
+        account is created in Firebase Authentication, and a basic record is saved in Cloud Firestore
+        (both Google services): your user ID, email address, name, profile picture URL, and when the
+        account was created and last signed in. If you sign in with email, your password is handled by
+        Firebase Authentication and is never visible to us. This record is used only to run sign-in and
+        keep a list of registered users. It never contains YouTube or YouTube Analytics data.</li>
+      <li><strong>Sign-in tokens</strong> for Google are kept in secure storage on your device and are
+        used only to call Google's APIs for you.</li>
       <li>Cached analysis results, recent lookups, pinned channels and chat history are stored
         locally on your device and are removed when you uninstall the app or clear its data.</li>
-      <li>We do not keep copies of your YouTube or YouTube Analytics data on any server we control.</li>
+      <li>We do not keep copies of your YouTube or YouTube Analytics data on any server or database.</li>
     </ul>
     </section>
     <section class="card policy-section" id="s4">
@@ -108,13 +113,19 @@
       <li><strong>AI providers (Google Gemini, OpenRouter, Groq)</strong>: when you request an AI analysis
         or chat, the relevant video or channel details (for example titles, descriptions, tags,
         statistics and thumbnail image) are sent to the selected AI provider to generate suggestions.
-        Your Google account credentials are never sent to AI providers.</li>
+        If you are signed in with Google and chatting about your own channel, a summary of your
+        channel's YouTube Analytics for the last 28 days is also sent so the AI can answer from real
+        data: views, watch time, average view duration and percentage, net subscribers, top traffic
+        sources and top audience age/gender groups. This happens only when you use the AI features,
+        and only to answer your request. Your email address, Google account credentials and sign-in
+        tokens are never sent to AI providers.</li>
       <li><strong>Google AdMob</strong>: the mobile app shows ads. AdMob may collect device information
         such as advertising ID, IP address and app usage to serve and measure ads; see
         <a href="https://policies.google.com/technologies/ads">how Google uses information from ads</a>.
         Google user data obtained through sign-in is never used for advertising.</li>
-      <li><strong>Firebase (Google)</strong>: used for app configuration and to protect the app's API
-        access (Remote Config, App Check). These do not receive your YouTube data.</li>
+      <li><strong>Firebase (Google)</strong>: Firebase Authentication and Cloud Firestore store your
+        account record (see section 3); Remote Config and App Check are used for app configuration and
+        to protect the app's API access. None of these receive your YouTube or YouTube Analytics data.</li>
     </ul>
     </section>
     <section class="card policy-section" id="s5">
@@ -134,6 +145,9 @@
         <a href="https://myaccount.google.com/permissions">Third-party connections</a> page or via
         <a href="https://security.google.com/settings/security/permissions">Google security settings</a>.</li>
       <li>Uninstalling the app or clearing its storage deletes all locally stored data.</li>
+      <li>To delete your account and its record, email
+        <a href="mailto:mubarakansari715@gmail.com">mubarakansari715@gmail.com</a> from the address you
+        signed in with, and we will delete them.</li>
     </ul>
     </section>
     <section class="card policy-section" id="s7">
